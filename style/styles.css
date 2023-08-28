@@ -140,38 +140,28 @@ section {
     box-shadow: 0 0 1rem var(--secondary-color);
 }
 
+/* About Section */
 .about {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     background: var(--primary-color);
-}
-
-.logo-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 3rem;
-}
-
-.about-txt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding: 20px;
     text-align: center;
 }
 
-.about-txt h3 {
+.about h3 {
     font-size: 3rem;
     line-height: 2.5;
     font-family: 'Great Vibes', cursive;
 }
 
-.about-txt p {
+.about p {
     line-height: 1.5;
     font-size: 1.1rem;
+    width: 80%;
+    text-align: justify;
 }
 
 .menu {
