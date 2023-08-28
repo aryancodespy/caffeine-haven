@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Comic Neue', cursive;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #2A1E0F;
+    --secondary-color: #FFA500;
+    --accent-color: #F5F3E6;
+    --highlight-color: #A1561C;
+}
+
+html {
+    background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #414141;
+    background-blend-mode: multiply;
+    overflow-x: hidden;
+}
+
+body {
+    color: var(--accent-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 1px 1rem #000;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.logo i {
+    font-size: 2rem;
+}
+
+.logo h1 {
+    font-family: 'Great Vibes', cursive;
+}
+
+.logo i, .logo h1 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.navbar {
+    display: block;
+}
+
+.navbar a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-left: 25px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: var(--highlight-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 10% 2px;
+}
+
+.hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Great Vibes', cursive;
+    text-transform: capitalize;
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.btn {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.5;
+    border: 1px solid var(--highlight-color);
+    background: var(--highlight-color);
+    color: var(--accent-color);
+    padding: 10px 40px;
+    border-radius: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    transition: 800ms all;
+    box-shadow: 0 0 1rem var(--highlight-color);
+}
+
+.btn:hover {
+    scale: 1.1;
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 1rem var(--secondary-color);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-color);
+}
+
+.logo-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3rem;
+}
+
+.about-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-txt h3 {
+    font-size: 3rem;
+    line-height: 2.5;
+    font-family: 'Great Vibes', cursive;
+}
+
+.about-txt p {
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.menu h3 {
+    font-size: 3rem;
+    line-height: 2.5;
+    font-family: 'Great Vibes', cursive;
+    display: block;
+    margin:0 auto;
+    margin-bottom: 50px;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    scale: 1.4;
+}
+
+.card {
+    position: relative;
+    width: 120px;
+    height: 140px;
+    border-radius: 8px;
+    transition: 1000ms all;
+    transform-origin: center;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    outline: solid var(--primary-color);
+    overflow: hidden;
+}
+
+.card img {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.card:hover figcaption {
+    font-size: 0.4rem;
+    font-weight: 600;
+    position: absolute;
+    height: 80px;
+    width: 160px;
+    display: flex;
+    align-items: end;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0)100%);
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+
+
+/* Style for the Order Section */
+.order {
+    padding: 10rem 10% 2rem;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+  }
+  
+  .order h3 {
+    font-size: 3rem;
+    line-height: 2.5;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 2rem;
+  }
+  
+  #order-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #order-form .customer-info {
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 30px;
+  }
+
+  #order-form .customer-info .input-box input{
+    width: 100%;
+	padding: 1rem;
+	font-size: 1rem;
+    border-radius: 0.8rem;
+	margin: 0.7rem 0;
+    border: 1px solid;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .item label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .item input[type="checkbox"] {
+    margin-right: 1rem;
+  }
+  
+  .item input[type="number"] {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .btn {
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.5;
+    border: 1px solid var(--highlight-color);
+    background: var(--highlight-color);
+    color: var(--accent-color);
+    padding: 10px 40px;
+    border-radius: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    transition: 800ms all;
+    box-shadow: 0 0 1rem var(--highlight-color);
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 1rem var(--secondary-color);
+  }
+  
+
+  /* Style for the Order Summary (Receipt) */
+#order-summary {
+  border: 2px solid var(--highlight-color);
+  padding: 1.5rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  box-shadow: 0 0 1rem var(--highlight-color);
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+
+}
+
+#order-summary table {
+    border-collapse: collapse;
+}
+
+#order-summary h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+#order-summary td {
+    width: 250px;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+
+#order-summary tfoot td {
+    font-weight: 600;
+    border: none;
+    text-align: left;
+}
+
+#order-summary p {
+    margin: 20px auto;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Adjust header styles for smaller screens */
+    .header {
+        padding: 1rem 5%;
+    }
+
+    /* Adjust font sizes and padding for smaller screens */
+    .hero-text h3 {
+        font-size: 2rem;
+    }
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+
+    /* Adjust grid for smaller screens */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Adjust item details for smaller screens */
+    .item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    /* Adjust font sizes and padding for tablet screens */
+    .hero-text h3 {
+        font-size: 2.5rem;
+    }
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+    .btn {
+        font-size: 1rem;
+    }
+
+    /* Adjust grid for tablet screens */
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Adjust item details for tablet screens */
+    .item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+  

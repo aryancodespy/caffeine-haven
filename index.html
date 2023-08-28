@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFFEINE HAVEN</title>
+    <link rel="stylesheet" href="./style/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <i class="bx bxs-coffee"></i>
+            <h1>Caffeine Haven</h1>
+        </div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <!-- HERO Banner -->
+        <section class="home" id="home">
+            <div class="hero-banner">
+                <div class="hero-text">
+                    <h3>Welcome To</h3>
+                    <h1>CAFFEINE HAVEN</h1>
+                    <a href="#order" class="btn">Order Now!</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="logo-img">
+                <i class="bx bxs-coffee"></i>
+                <h3>CAFFEINE HAVEN</h3>
+            </div>
+            <div class="about-txt">
+                <h3>About Us</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Laudantium molestiae recusandae facilis numquam tempora incidunt, 
+                    vero ipsum dolorum, facere ab, perspiciatis cum aspernatur rem aliquid.
+                </p>
+            </div>
+        </section>
+
+        
+
+        <!-- Menu -->
+        <section class="menu" id="menu">
+            <h3>Menu</h3>
+            <div class="container">
+                <div class="gallery">
+                    <article class="card">
+                        <figure>
+                            <img src="./images/ChocolateHazelnutIcedCoffee.jpg" alt="Chocolate Hazelnut Iced Coffee">
+                            <figcaption>Chocolate Hazelnut Iced Coffee <br> &pound; 4.00</figcaption>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="./images/FrenchVanillaIcedCoffee.jpg" alt="French Vanilla Iced Coffee">
+                            <figcaption>French Vanilla Iced Coffee <br> &pound; 3.00</figcaption>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="./images/Iced-Mocha.jpg" alt="Iced Mocha">
+                            <figcaption>Iced Mocha <br> &pound; 4.50</figcaption>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="./images/IcedCaramelMacchiato.jpg" alt="Iced Caramel Macchiato">
+                            <figcaption>Iced Caramel Macchiato <br> &pound; 3.75</figcaption>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="./images/PumpkinSpiceLatte.jpg" alt="Pimpkin Spice Latte">
+                            <figcaption>Pimpkin Spice Latte <br> &pound; 3.50</figcaption>
+                        </figure>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img src="./images/FrozenCoconutCaramelFrappe.jpg" alt="Frozen Coconut Caramel Frappe">
+                            <figcaption>Frozen Coconut Caramel Frappe <br> &pound; 4.50</figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Testiomonial -->
+        <!-- <section class="review">
+            Cards 
+        </section> -->
+
+        <!-- Order Section -->
+        <section class="order" id="order">
+            <h3>Place Your Order</h3>
+            <form id="order-form">
+                <div class="customer-info">
+                    <div class="input-box">
+                        <input type="text" name="customer-name" id="customer-name" placeholder="Your Name" required>
+                        <input type="email" name="customer-email" id="customer-email" placeholder="Your Email" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <input type="tel" name="customer-phone" id="customer-phone" placeholder="Phone Number" required>
+                        <input type="text" name="customer-address" id="customer-address" placeholder="Your Address" required>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <div class="item-details">
+                            <label>
+                                <input type="checkbox" value="Chocolate Hazelnut Iced Coffee" data-quantity="1">
+                                Chocolate Hazelnut Iced Coffee &pound; 4.00
+                            </label>
+                            <label>
+                                <input type="number" min="1" value="1" data-quantity="1">
+                            </label>
+                        </div>
+                
+                        <div class="item-details">
+                            <label>
+                                <input type="checkbox" value="French Vanilla Iced Coffee" data-quantity="1">
+                                French Vanilla Iced Coffee &pound; 3.00
+                            </label>
+                            <label>
+                                <input type="number" min="1" value="1" data-quantity="1">
+                            </label>
+                        </div>
+                
+                        <div class="item-details">
+                            <label>
+                                <input type="checkbox" value="Iced Mocha" data-quantity="1">
+                                Iced Mocha &pound; 4.50
+                            </label>
+                            <label>
+                                <input type="number" min="1" value="1" data-quantity="1">
+                            </label>
+                        </div>
+                
+                        <div class="item-details">
+                            <label>
+                                <input type="checkbox" value="Iced Caramel Macchiato" data-quantity="1">
+                                Iced Caramel Macchiato &pound; 3.75
+                            </label>
+                            <label>
+                                <input type="number" min="1" value="1" data-quantity="1">
+                            </label>
+                        </div>
+                
+                        <div class="item-details">
+                            <label>
+                                <input type="checkbox" value="Pumpkin Spice Latte" data-quantity="1">
+                                Pumpkin Spice Latte &pound; 3.50
+                            </label>
+                            <label>
+                                <input type="number" min="1" value="1" data-quantity="1">
+                            </label>
+                    
+                        </div>
+                        <div class="item-details">
+                            <label>
+                                <input type="checkbox" value="Frozen Coconut Caramel Frappe" data-quantity="1">
+                                Frozen Coconut Caramel Frappe &pound; 4.50
+                            </label>
+                            <label>
+                                <input type="number" min="1" value="1" data-quantity="1">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Submit Order</button>
+            </form>
+            <div id="order-summary"></div>
+        </section>         
+    </main>
+
+    <!-- JS -->
+    <script src="./script/script.js"></script>
+</body>
+</html>
